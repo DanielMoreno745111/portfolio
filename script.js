@@ -10,15 +10,15 @@ document.addEventListener("DOMContentLoaded", function () {
     let isDarkMode = true;
 
     function applyDarkMode() {
-        document.documentElement.style.setProperty('--bg-color-black', '#000000');
-        document.documentElement.style.setProperty('--text-color-white', '#ffffff');
+        document.documentElement.style.setProperty('--bg-color', '#000000');
+        document.documentElement.style.setProperty('--text-color', '#ffffff');
         moonIcon.style.display = 'none';  // Oculta la luna
         sunIcon.style.display = 'block';  // Muestra el sol
     }
 
     function applyLightMode() {
-        document.documentElement.style.setProperty('--bg-color-black', '#ffffff');
-        document.documentElement.style.setProperty('--text-color-white', '#000000');
+        document.documentElement.style.setProperty('--bg-color', '#ffffff');
+        document.documentElement.style.setProperty('--text-color', '#000000');
         moonIcon.style.display = 'block';  // Muestra la luna
         sunIcon.style.display = 'none';  // Oculta el sol
     }
@@ -87,3 +87,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /**************************************************************/
+
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.navbar');
+
+
+menuIcon.onclick=()=>{
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
