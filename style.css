@@ -78,14 +78,14 @@ header{
 }
 
 
-/*
+
 #menu-icon{
     font-size: 3rem;
     color: var(--main-color);
     display: none;
     text-decoration: none;
 }
-*/
+
 
 .nav__label{
     display: none;
